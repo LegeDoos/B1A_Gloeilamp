@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>460</x>
-      <y>240</y>
+      <x>220</x>
+      <y>20</y>
       <w>360</w>
       <h>540</h>
     </coordinates>
@@ -19,6 +19,7 @@ Fitting
 Branduren
 Lichtopbrengst
 Staataan : bool
+Schakelaar : Schakelaar
 -
 Inschakelen()
 Uitschakelen()</panel_attributes>
@@ -27,14 +28,15 @@ Uitschakelen()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1200</x>
-      <y>240</y>
+      <x>960</x>
+      <y>20</y>
       <w>380</w>
       <h>380</h>
     </coordinates>
     <panel_attributes>Schakelaar
 -
 Ingeschakeld : bool
+Lampen : List&lt;Lamp&gt;
 -
 Omschakelen()</panel_attributes>
     <additional_attributes/>
@@ -42,8 +44,8 @@ Omschakelen()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>360</y>
+      <x>560</x>
+      <y>140</y>
       <w>440</w>
       <h>100</h>
     </coordinates>
@@ -52,5 +54,31 @@ m1=1
 m2=1..n
 &lt; bedient</panel_attributes>
     <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>500</y>
+      <w>380</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>Dimschakelaar
+-
+Dimpercentage : int
+-
+Dimmen()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1100</x>
+      <y>380</y>
+      <w>60</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
 </diagram>

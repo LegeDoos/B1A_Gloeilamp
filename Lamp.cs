@@ -9,7 +9,7 @@ namespace Week2Gloeilamp
     /// <summary>
     /// Representeert de lamp
     /// </summary>
-    class Lamp
+    public class Lamp
     {
         /// <summary>
         /// Type materiaal van de lamp (glas/kunstof)
@@ -43,7 +43,11 @@ namespace Week2Gloeilamp
         /// De status van de lamp (true is aan)
         /// </summary>
         public bool StaatAan { get; private set; }
-        
+        /// <summary>
+        /// De schakelaar die de lamp bedient
+        /// </summary>
+        public Schakelaar Schakelaar{ get; set; }
+
         /// <summary>
         /// Schakel de lamp in
         /// </summary>

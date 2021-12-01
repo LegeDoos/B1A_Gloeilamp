@@ -8,16 +8,19 @@ namespace Week2Gloeilamp
         {
             Console.WriteLine("Hello World!");
 
-            string mijnNaam;
-            mijnNaam = "Rob";
-            Console.WriteLine(mijnNaam);
-
             Lamp mijnGloeilamp = new Lamp();
             mijnGloeilamp.TypeMateriaal = "Glas";
             mijnGloeilamp.Vermogen = 100;
 
             Lamp nogEenGloeilamp = new Lamp();
             nogEenGloeilamp.Vermogen = 200;
+
+            Schakelaar mijnSchakelaar = new Schakelaar();
+            mijnSchakelaar.Lampen.Add(mijnGloeilamp);
+            mijnGloeilamp.Schakelaar = mijnSchakelaar;
+
+            mijnSchakelaar.Lampen.Add(nogEenGloeilamp);
+            nogEenGloeilamp.Schakelaar = mijnSchakelaar;
         }
     }
 }
